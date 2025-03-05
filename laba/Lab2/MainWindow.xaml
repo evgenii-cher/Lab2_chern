@@ -1,0 +1,44 @@
+﻿<Window x:Class="Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+    <Grid Margin="0,1,0,-1">
+        <TextBox x:Name="TextBoxEnemies" HorizontalAlignment="Left" Height="308" Margin="47,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="28" Margin="334,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Enemy name:" HorizontalAlignment="Left" Height="25" Margin="334,10,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Enemy icon:" HorizontalAlignment="Left" Height="25" Margin="527,207,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="TextBoxEnemyIcon" HorizontalAlignment="Left" Height="27" Margin="512,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="TextBoxBaseLife" HorizontalAlignment="Left" Height="34" Margin="334,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Base Life" HorizontalAlignment="Left" Height="25" Margin="334,76,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="TextBoxLifeModifier" HorizontalAlignment="Left" Height="29" Margin="334,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Life Modifier" HorizontalAlignment="Left" Height="25" Margin="334,149,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="TextBoxSpawnChance" HorizontalAlignment="Left" Height="35" Margin="334,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Spawn chance (1-100)" HorizontalAlignment="Left" Height="25" Margin="324,217,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="TextBoxBaseGold" HorizontalAlignment="Left" Height="34" Margin="513,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Base Gold" HorizontalAlignment="Left" Height="26" Margin="513,272,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="TextBoxGoldModifier" HorizontalAlignment="Left" Height="28" Margin="512,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Gold Modifier" HorizontalAlignment="Left" Height="24" Margin="514,346,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="ButtonAdd" Content="Add and Save" HorizontalAlignment="Left" Height="36" Margin="334,312,0,0" VerticalAlignment="Top" Width="118" Click="ButtonAdd_Click"/>
+        <Button x:Name="Clear_Json" Content="Deleate all" HorizontalAlignment="Left" Height="42" Margin="56,369,0,0" VerticalAlignment="Top" Width="103" Click="Clear_Click"/>
+        <Button x:Name="DelByName" Content="Delete by name:" HorizontalAlignment="Left" Height="42" Margin="175,369,0,0" VerticalAlignment="Top" Width="128" Click="DelByName_Click"/>
+        <TextBox x:Name="TextBoxNameDel" HorizontalAlignment="Left" Height="42" Margin="324,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Json Enemies' List" HorizontalAlignment="Left" Height="30" Margin="95,10,0,0" VerticalAlignment="Top" Width="158"/>
+        <Button x:Name="Button1ico" Margin="896,54,173,542" Click="Button1ico_Click">
+            <Image Source="Resources/1.png" Height="78" Width="125"/>
+        </Button>
+        <Image x:Name="image1" Margin="484,28,512,510" Source="/Resources/1.png" Stretch="Fill" Visibility="Hidden" />
+        <Button x:Name="Button2ico" Margin="896,173,173,422" Click="Button2ico_Click">
+            <Image Source="Resources/2.png" Height="78" Width="123"/>
+        </Button>
+        <Image x:Name="image2" Margin="487,31,545,519" Source="/2.png" Stretch="Fill" Visibility="Hidden"/>
+        <Button x:Name="Button3ico" Margin="896,298,173,297" Click="Button3ico_Click">
+            <Image Source="Resources/3.png" Height="78" Width="123"/>
+        </Button>
+        <Image x:Name="image3" Margin="491,18,555,510" Source="/Resources/3.png" Stretch="Fill" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
